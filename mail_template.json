@@ -1,0 +1,19 @@
+{
+  "key": "API_KEY",
+  "message": {
+    "html": "<p>Newspaper Boy!</p>",
+    "text": "Newspaper Boy!",
+    "subject": "Newspaper Boy!",
+    "from_email": "newspaperboy@yulun.me",
+    "from_name": "Newspaper Boy",
+    "to": [MAILLIST],
+    "attachments": [
+      {
+        "type": "application/x-mobipocket-ebook",
+        "name": "FILENAME",
+        "content": "CONTENT"
+      }
+    ]
+  },
+  "async": false
+}
