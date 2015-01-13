@@ -4,7 +4,7 @@
     "html": "<p>Newspaper Boy!</p>",
     "text": "Newspaper Boy!",
     "subject": "Newspaper Boy!",
-    "from_email": "newspaperboy@yulun.me",
+    "from_email": "SENDER",
     "from_name": "Newspaper Boy",
     "to": [MAILLIST],
     "attachments": [

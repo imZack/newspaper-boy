@@ -2,6 +2,7 @@
 
 from __future__ import unicode_literals, division, absolute_import, print_function
 from calibre.web.feeds.news import BasicNewsRecipe
+import re
 
 __license__ = 'GPL v3'
 __author__ = 'YuLun Shih'
@@ -11,7 +12,7 @@ class AppledailyTW(BasicNewsRecipe):
     __license__ = 'GPL v3'
     __author__ = 'YuLun Shih'
     title = u'蘋果日報 (台灣)'
-    description = '24 小時陪你看新聞，我們是最勁爆、最八卦、最貼近大家生活的台灣蘋果日報！'
+    description = u'24 小時陪你看新聞，我們是最勁爆、最八卦、最貼近大家生活的台灣蘋果日報！'
     cover_url = 'http://i.imgur.com/3pkzQbw.jpg'
     masthead_url = 'http://i.imgur.com/otLZwQq.gif'
     oldest_article = 1.5
@@ -19,8 +20,8 @@ class AppledailyTW(BasicNewsRecipe):
     auto_cleanup = True
     simultaneous_downloads = 25
     language = 'zh_TW'
-    tags = 'news, Taiwan'
-    category = 'news, Taiwan'
+    tags = 'news, chinese, Taiwan'
+    category = 'news, chinese, Taiwan'
     publisher = u'蘋果日報 (台灣)'
     publication_type = 'newspaper'
     no_stylesheets = True
@@ -102,7 +103,6 @@ class AppledailyTW(BasicNewsRecipe):
     ]
 
     def preprocess_raw_html(self, raw_html, url):
-        import re
         raw_html = re.sub(ur'<a href=".*?<br><br>.*?<\/a>', '', raw_html)
         raw_html = re.sub(ur'<title>(.*?)[\s]+\|.*<\/title>', '<title>\1<\/title>', raw_html)
         return raw_html

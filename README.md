@@ -13,11 +13,22 @@ Prerequisite
 Quick Start
 -----------
 
-    $ git clone https://github.com/imZack/newspaper-boy.git && cd newspaper-boy
     $ echo "your@kinlde.com" > emails.txt
-    $ API_KEY=GET_FROM_MANDRILL ./thorw.sh
+    $ API_KEY=GET_YOUR_OWN_KEY_FROM_MANDRILL \
+      SENDER="newspaper@yulun.me" \
+      RECIPE="appledaily_tw" \
+      EMAILS="emails.txt"
+      ./thorw.sh
+
 
 PS. Don't forget set sender in your own [Approved Personal Document E-mail List](http://www.amazon.com/gp/help/customer/display.html/ref=hp_pdoc_main_short_us?nodeId=200767340#GUID-0A6C24BA-AE01-45F1-8D3A-2557A7B1DE31)
+
+Variables
+---------
+- **API_KEY** Your MANDRILL API Key for sends email.
+- **SENDER** Send as `someone@somewhere.com`.
+- **RECIPE** Loads Calibre recipe from `./recipes` directory.
+- **EMAILS** List of Receivers' email. (lines are separated by newlines)
 
 Reference
 ---------
@@ -27,4 +38,4 @@ Reference
 
 License
 -------
-[MIT](http://yulun.mit-license.org/)
+GNU General Public License v3.0
