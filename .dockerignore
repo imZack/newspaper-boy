@@ -1,0 +1,4 @@
+.git/
+emails.txt
+output/
+*.tmp
