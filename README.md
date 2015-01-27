@@ -6,6 +6,8 @@ Delivery newspaper to your kindle everyday!
 <a target="_blank" href="https://cloud.githubusercontent.com/assets/690703/5707093/dca645aa-9ac0-11e4-9318-2597cc4ad69a.png"><img width="350px;" src="https://cloud.githubusercontent.com/assets/690703/5707093/dca645aa-9ac0-11e4-9318-2597cc4ad69a.png"></a>
 <a target="_blank" href="https://cloud.githubusercontent.com/assets/690703/5707097/e169382c-9ac0-11e4-89bf-fbbc862d70cd.png"><img width="350px;" src="https://cloud.githubusercontent.com/assets/690703/5707097/e169382c-9ac0-11e4-89bf-fbbc862d70cd.png"></a>
 
+[![](http://dockeri.co/image/zack/newspaper-boy)](https://registry.hub.docker.com/u/zack/newspaper-boy/)
+
 Prerequisite
 ------------
     $ apt-get update && apt-get install -y calibre
